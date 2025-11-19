@@ -25,7 +25,7 @@ and cmd =
   | While of expr * cmd
 
 type decl =
-  | IntVar of ide
-  | Fun of ide * ide * cmd * expr  (** name, parameter, body command, return expr *)
+  | IntVar of ide 
+  | Fun of ide * ide * cmd * expr
 
 type prog = Prog of (decl list * cmd)
